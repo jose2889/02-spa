@@ -2,6 +2,10 @@
     margin-top: 20px;
 }
 
+.img-logo {
+    width: 180px;
+}
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
