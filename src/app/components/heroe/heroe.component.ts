@@ -10,6 +10,7 @@ import { HeroesService } from '../../services/heroes.service';
 export class HeroeComponent implements OnInit {
 
   heroe:any;
+  
 
   constructor(private activatedRoute:ActivatedRoute, private heroesService:HeroesService) {
 
