@@ -20,11 +20,7 @@ export class BuscadorComponent implements OnInit {
     this.activatedRoute.params.subscribe( p => {
       this.termino = p['termino'];
       this.heroes = this.heroesService.buscarHeroes(p['termino']);
-      this.mostrar = false;
-      if (this.heroes.length === 0){
-        this.mostrar = true;
-      }
-      console.log(this.heroes.length);
+      console.log(this.heroes);
     });
   }
 

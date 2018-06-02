@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  busqueda:any;
   constructor(private servicio:HeroesService, private router:Router) { }
 
   ngOnInit() {
@@ -17,6 +18,7 @@ export class NavbarComponent implements OnInit {
   buscarHeroe(valor){
    
     this.router.navigate(['/buscar',valor]);
+    this.busqueda = "";
     // this.buscarHeroe(valor);
     // console.log("dfkdfdkfp");
   
